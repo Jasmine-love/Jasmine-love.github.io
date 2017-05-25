@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://jasmine-love.github.io/"/>
   <updated>2017-05-25T07:39:44.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://jasmine-love.github.io/</id>
   
   <author>
     <name>秋天的枫叶</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>BlueLake博客主题的详细配置</title>
-    <link href="http://yoursite.com/2017/05/25/BlueLake%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2017/05/25/BlueLake博客主题的详细配置/</id>
+    <link href="http://jasmine-love.github.io/2017/05/25/BlueLake%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/"/>
+    <id>http://jasmine-love.github.io/2017/05/25/BlueLake博客主题的详细配置/</id>
     <published>2017-05-25T03:41:18.000Z</published>
     <updated>2017-05-25T07:39:44.000Z</updated>
     
@@ -57,8 +57,8 @@
   
   <entry>
     <title>缓存</title>
-    <link href="http://yoursite.com/2017/05/24/newBlog/"/>
-    <id>http://yoursite.com/2017/05/24/newBlog/</id>
+    <link href="http://jasmine-love.github.io/2017/05/24/newBlog/"/>
+    <id>http://jasmine-love.github.io/2017/05/24/newBlog/</id>
     <published>2017-05-24T09:43:48.000Z</published>
     <updated>2017-05-24T09:48:04.000Z</updated>
     
@@ -80,8 +80,8 @@
   
   <entry>
     <title>Hexo 介绍</title>
-    <link href="http://yoursite.com/2017/05/24/hello-world/"/>
-    <id>http://yoursite.com/2017/05/24/hello-world/</id>
+    <link href="http://jasmine-love.github.io/2017/05/24/hello-world/"/>
+    <id>http://jasmine-love.github.io/2017/05/24/hello-world/</id>
     <published>2017-05-24T09:04:57.390Z</published>
     <updated>2017-05-24T09:27:40.000Z</updated>
     
