@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-25T07:39:44.000Z</updated>
+  <updated>2017-06-06T10:09:34.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git</title>
+    <link href="http://yoursite.com/2017/06/06/Git/"/>
+    <id>http://yoursite.com/2017/06/06/Git/</id>
+    <published>2017-06-06T08:59:47.000Z</published>
+    <updated>2017-06-06T10:09:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>当了这么长时间的程序员，突然发现对于<a href="https://git-scm.com/download/" target="_blank" rel="external">Git</a>好像不太会用，在这里，让我们一起学习一下<a href="https://git-scm.com/download/" target="_blank" rel="external">Git</a>的使用方法吧。</p>
+<h2 id="Git初始化"><a href="#Git初始化" class="headerlink" title="Git初始化"></a>Git初始化</h2><p>Git 使用 git init 命令来初始化一个 Git 仓库，Git 的很多命令都需要在 Git 的仓库中运行，所以 git init 是使用 Git 的第一个命令。<br>在执行完成 git init 命令后，Git 仓库会生成一个 .git 目录，该目录包含了资源的所有元数据，其他的项目目录保持不变（不像 SVN 会在每个子目录生成 .svn 目录，Git 只在仓库的根目录生成 .git 目录）。<br>使用当前目录作为Git仓库，我们只需使它初始化。</p>
+<p>使用当前目录作为Git仓库，我们只需使它初始化。该命令执行完后会在当前目录生成一个 .git 目录。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
+<p>使用我们指定目录作为Git仓库。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init newrepo</div></pre></td></tr></table></figure>
+<p>初始化后，会在 newrepo 目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。</p>
+<p>如果当前目录下有几个文件想要纳入版本控制，需要先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git add *.c</div><div class="line">$ git add README</div><div class="line">$ git commit -m <span class="string">'初始化项目版本'</span></div></pre></td></tr></table></figure>
+<h2 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h2><p>首先要明确下，所有的版本控制系统，只能跟踪文本文件的改动，比如txt文件，网页，所有程序的代码等，Git也不列外，版本控制系统可以告诉你每次的改动，但是图片，视频这些二进制文件，虽能也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是知道图片从1kb变成2kb，但是到底改了啥，版本控制也不知道。</p>
+<p>我在版本库newrepo目录下新建一个记事本文件 readme.txt 内容如下：11111111</p>
+<h3 id="第一步：使用命令-git-add-readme-txt添加到暂存区里面去。如下"><a href="#第一步：使用命令-git-add-readme-txt添加到暂存区里面去。如下" class="headerlink" title="第一步：使用命令 git add readme.txt添加到暂存区里面去。如下"></a>第一步：使用命令 git add readme.txt添加到暂存区里面去。如下</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add readme.txt</div></pre></td></tr></table></figure>
+<h3 id="用命令-git-commit告诉Git，把文件提交到仓库。后面的是内容提示，可加可不加"><a href="#用命令-git-commit告诉Git，把文件提交到仓库。后面的是内容提示，可加可不加" class="headerlink" title="用命令 git commit告诉Git，把文件提交到仓库。后面的是内容提示，可加可不加"></a>用命令 git commit告诉Git，把文件提交到仓库。后面的是内容提示，可加可不加</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  git commit -m <span class="string">'提交test.txt文件'</span></div></pre></td></tr></table></figure>
+<p>现在我们已经提交了一个readme.txt文件了，我们下面可以通过命令git status来查看是否还有文件未提交，如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  git status</div></pre></td></tr></table></figure>
+<p>如果文件有改动知，提交修改和提交文件是一样的2步(第一步是git add  第二步是：git commit)。</p>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><p>如上，我们已经学会了修改文件，现在我继续对readme.txt文件进行修改，再增加一行内容为33333333333333.并按照上述步骤进行提交。</p>
+<p>现在我已经对readme.txt文件做了三次修改了，那么我现在想查看下历史记录，如何查呢？我们现在可以使用命令 git log 演示如下所示：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  git <span class="built_in">log</span></div></pre></td></tr></table></figure>
+<p>git log命令显示从最近到最远的显示日志，我们可以看到最近三次提交，最近的一次是,增加内容为333333.上一次是添加内容222222，第一次默认是 111111.如果嫌上面显示的信息太多的话，我们可以使用命令 git log –pretty=oneline 演示如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  git <span class="built_in">log</span> –pretty=oneline</div></pre></td></tr></table></figure>
+<p>现在我想使用版本回退操作，我想把当前的版本回退到上一个版本，要使用什么命令呢？可以使用如下2种命令，第一种是：git reset  –hard HEAD^ 那么如果要回退到上上个版本只需把HEAD^ 改成 HEAD^^ 以此类推。那如果要回退到前100个版本的话，使用上面的方法肯定不方便，我们可以使用下面的简便命令操作：git reset  –hard HEAD~100 即可。如果想回退到上一个版本的命令如下操作：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  git reset  --hard HEAD^</div></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  git reset  --hard HEAD~100</div></pre></td></tr></table></figure>
+<p>再来查看下 readme.txt内容如下：通过命令cat readme.txt查看</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  cat readme.txt</div></pre></td></tr></table></figure>
+<p>我们看到 增加333333 内容我们没有看到了，但是现在我想回退到最新的版本，如：有333333的内容要如何恢复呢？我们可以通过版本号回退，使用命令方法如下：git reset  –hard 版本号 ，但是现在的问题假如我已经关掉过一次命令行或者333内容的版本号我并不知道呢？要如何知道增加3333内容的版本号呢？可以通过如下命令即可获取到版本号：git reflog  演示如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  git reflog</div></pre></td></tr></table></figure>
+<p>通过上面的显示我们可以知道，增加内容3333的版本号是 6fcfc89.我们现在可以命令git reset  –hard 6fcfc89来恢复了。演示如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset  --hard 6fcfc89</div></pre></td></tr></table></figure>
+<p>可以看到 目前已经是最新的版本了。 </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;当了这么长时间的程序员，突然发现对于&lt;a href=&quot;https://git-scm.com/download/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;好像不太会用，在这里，让我们一起学习一下&lt;a href=&quot;https://git-
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>BlueLake博客主题的详细配置</title>
     <link href="http://yoursite.com/2017/05/25/BlueLake%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2017/05/25/BlueLake博客主题的详细配置/</id>
     <published>2017-05-25T03:41:18.000Z</published>
-    <updated>2017-05-25T07:39:44.000Z</updated>
+    <updated>2017-06-06T08:53:10.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://hexo.io/themes/" target="_blank" rel="external">BlueLake主题</a>写了有一段时间了，经常会有朋友发消息给我问一些配置的问题，这篇博文主要也是为了解决这些问题。主题以简洁轻量自居(实则简陋)，去掉了Jquery和Fancybox,用原生JS实现站内搜索功能和回到顶部效果。这个主题只是一个小小的雏形，期待您来帮助它成长。</p>
 <p>在阅读本文之前，假定您已经成功安装了Hexo，并使用 Hexo 提供的命令创建了一个静态博客。Hexo是一个快速、简洁且高效的博客框架。Hexo基于Node.js ，使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>

@@ -4,8 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/06/06/Git/</loc>
+    <lastmod>2017-06-06T10:09:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Git</title>
+        <pubTime>2017-06-06T08:59:47.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/05/25/BlueLake%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2017-05-25T07:39:44.000Z</lastmod>
+    <lastmod>2017-06-06T08:53:10.000Z</lastmod>
     <data>
         <display>
         <title>BlueLake博客主题的详细配置</title>
