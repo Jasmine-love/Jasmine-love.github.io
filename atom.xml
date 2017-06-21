@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-21T08:17:34.000Z</updated>
+  <updated>2017-06-21T08:21:30.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,15 +20,16 @@
     <link href="http://yoursite.com/2017/06/20/VUE%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2017/06/20/VUE简单教程/</id>
     <published>2017-06-20T08:17:38.000Z</published>
-    <updated>2017-06-21T08:17:34.000Z</updated>
+    <updated>2017-06-21T08:21:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>在使用vue.js构建大型项目时建议使用NPM安装</p>
 <h2 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a>安装webpack</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install webpack -g</div></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 最新稳定版本</span></div><div class="line">$ npm install vue</div><div class="line"><span class="comment"># 最新稳定兼容版本</span></div><div class="line">$ npm install vue@csp</div></pre></td></tr></table></figure>
+<h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 最新稳定版本</span></div><div class="line">$ npm install vue</div><div class="line"><span class="comment"># 最新稳定兼容版本</span></div><div class="line">$ npm install vue@csp</div></pre></td></tr></table></figure>
 <h2 id="安装vue-cli，执行以下命令安装vue-cli"><a href="#安装vue-cli，执行以下命令安装vue-cli" class="headerlink" title="安装vue cli，执行以下命令安装vue cli"></a>安装vue cli，执行以下命令安装vue cli</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g vue-cli</div></pre></td></tr></table></figure>
 <p>安装完vue-cli之后，我们就可以基于vue-webpack-simple模板和vue-webpack模板创建项目了<br>在硬盘上找一个文件夹放工程用，在终端中进入该目录</p>
 <h2 id="根据模板创建项目"><a href="#根据模板创建项目" class="headerlink" title="根据模板创建项目"></a>根据模板创建项目</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vue init webpack-simple 工程名字&lt;工程名字不能用中文&gt;</div><div class="line">或者创建vue1.0的项目</div><div class="line">vue init webpack-simple<span class="comment">#1.0 工程名字&lt;工程名字不能用中文&gt;</span></div></pre></td></tr></table></figure>
-<p>在创建模板的时候会有一些初始化的设置：<br>Target directory exists. Continue? (Y/n) 直接回车默认(然后会下载 vue2.0模板，这里可能需要连代理)</p>
+<p>在创建模板的时候会有一些初始化的设置：</p>
+<p>Target directory exists. Continue? (Y/n) 直接回车默认(然后会下载 vue2.0模板，这里可能需要连代理)</p>
 <p>Project name (vue-test) 直接回车默认</p>
 <p>Project description (A Vue.js project) 直接回车默认</p>
 <p>Author 写你自己的名字</p>
