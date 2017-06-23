@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-23T02:43:34.000Z</updated>
+  <updated>2017-06-23T07:03:32.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,34 @@
   
   <entry>
     <title>微信小程序——400报错</title>
+    <link href="http://yoursite.com/2017/06/23/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E2%80%99/"/>
+    <id>http://yoursite.com/2017/06/23/微信小程序’/</id>
+    <published>2017-06-23T02:26:27.000Z</published>
+    <updated>2017-06-23T07:03:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近一直跟着demo做小程序，但是刚开始就卡在了请求豆瓣电影API数据上，折腾了很久才发现问题，初始请求数据代码如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">wx.request(&#123;</div><div class="line">    url: <span class="string">'http://api.douban.com/v2/movie/top250'</span>,</div><div class="line">    method: <span class="string">'GET'</span>,</div><div class="line">    data: &#123;&#125;,</div><div class="line">    header: &#123;</div><div class="line">        <span class="string">'Accept'</span>: <span class="string">'application/json'</span></div><div class="line">    &#125;,</div><div class="line">    success: <span class="keyword">function</span>(res) &#123;</div><div class="line">        console.log(res);</div><div class="line">        that.setData(&#123;</div><div class="line">            movieList: res</div><div class="line">        &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>但是请求之后总是报400错误:<br><img src="/2017/06/23/微信小程序’/QQ截图20170623103533.png" alt="报错信息"><br>后来才发现，小程序升级之后，数据请求的header写法已经变了，需要修改请求头部<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"> wx.request(&#123;</div><div class="line">    url: <span class="string">'http://api.douban.com/v2/movie/top250'</span>,</div><div class="line">    method: <span class="string">'GET'</span>,</div><div class="line">    data: &#123;&#125;,</div><div class="line">    header: &#123;</div><div class="line">        <span class="string">"Content-Type"</span>:<span class="string">"json"</span></div><div class="line">    &#125;,</div><div class="line">    success: <span class="keyword">function</span>(res) &#123;</div><div class="line">        console.log(res);</div><div class="line">        that.setData(&#123;</div><div class="line">            movieList: res</div><div class="line">        &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>改成这样之后就OK了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近一直跟着demo做小程序，但是刚开始就卡在了请求豆瓣电影API数据上，折腾了很久才发现问题，初始请求数据代码如下：&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序——400报错</title>
     <link href="http://yoursite.com/2017/06/23/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     <id>http://yoursite.com/2017/06/23/微信小程序/</id>
     <published>2017-06-23T02:26:27.000Z</published>
-    <updated>2017-06-23T02:43:34.000Z</updated>
+    <updated>2017-06-23T07:01:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近一直跟着demo做小程序，但是刚开始就卡在了请求豆瓣电影API数据上，折腾了很久才发现问题，初始请求数据代码如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">wx.request(&#123;</div><div class="line">    url: <span class="string">'http://api.douban.com/v2/movie/top250'</span>,</div><div class="line">    method: <span class="string">'GET'</span>,</div><div class="line">    data: &#123;&#125;,</div><div class="line">    header: &#123;</div><div class="line">        <span class="string">'Accept'</span>: <span class="string">'application/json'</span></div><div class="line">    &#125;,</div><div class="line">    success: <span class="keyword">function</span>(res) &#123;</div><div class="line">        console.log(res);</div><div class="line">        that.setData(&#123;</div><div class="line">            movieList: res</div><div class="line">        &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
-<p>但是请求之后总是报400错误:<br><img src="../images/QQ截图20170623103533.png" alt="报错信息"><br>后来才发现，小程序升级之后，数据请求的header写法已经变了，需要修改请求头部<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"> wx.request(&#123;</div><div class="line">    url: <span class="string">'http://api.douban.com/v2/movie/top250'</span>,</div><div class="line">    method: <span class="string">'GET'</span>,</div><div class="line">    data: &#123;&#125;,</div><div class="line">    header: &#123;</div><div class="line">        <span class="string">"Content-Type"</span>:<span class="string">"json"</span></div><div class="line">    &#125;,</div><div class="line">    success: <span class="keyword">function</span>(res) &#123;</div><div class="line">        console.log(res);</div><div class="line">        that.setData(&#123;</div><div class="line">            movieList: res</div><div class="line">        &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>但是请求之后总是报400错误:<br><img src="/2017/06/23/微信小程序/QQ截图20170623103533.png" alt="报错信息"><br>后来才发现，小程序升级之后，数据请求的header写法已经变了，需要修改请求头部<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"> wx.request(&#123;</div><div class="line">    url: <span class="string">'http://api.douban.com/v2/movie/top250'</span>,</div><div class="line">    method: <span class="string">'GET'</span>,</div><div class="line">    data: &#123;&#125;,</div><div class="line">    header: &#123;</div><div class="line">        <span class="string">"Content-Type"</span>:<span class="string">"json"</span></div><div class="line">    &#125;,</div><div class="line">    success: <span class="keyword">function</span>(res) &#123;</div><div class="line">        console.log(res);</div><div class="line">        that.setData(&#123;</div><div class="line">            movieList: res</div><div class="line">        &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <p>改成这样之后就OK了。</p>
 ]]></content>
     
