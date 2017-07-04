@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>New Date的属性 | 秋天的枫叶</title><link rel="stylesheet" type="text/css" href="//fonts.css.network/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">New Date的属性</h1><a id="logo" href="/.">秋天的枫叶</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="搜索..."></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">New Date的属性</h1><div class="post-meta"><span class="date">Jul 04, 2017</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i> Hits</i></i></span><a href="/2017/07/04/New-Date的属性/#comments" class="comment-count"><i class="cloud-tie-join-count"><i class="join-count">0</i></i> 留言</a></div><div class="post-content"><p>在写代码用到时间的时候经常记不住获取时、分、秒等的属性怎么写，因此在这里将他们整理出来，方便查询。</p>
+<h2 id="时间用法表格"><a href="#时间用法表格" class="headerlink" title="时间用法表格"></a>时间用法表格</h2><table>
+<thead>
+<tr>
+<th>产品</th>
+<th>价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getDate()</td>
+<td>从 Date 对象返回一个月中的某一天 (1 ~ 31)。</td>
+</tr>
+<tr>
+<td>getDay()</td>
+<td>从 Date 对象返回一周中的某一天 (0 ~ 6)。</td>
+</tr>
+<tr>
+<td>getFullYear()</td>
+<td>从 Date 对象以四位数字返回年份。</td>
+</tr>
+<tr>
+<td>getHours()</td>
+<td>返回 Date 对象的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td>getMilliseconds()</td>
+<td>返回 Date 对象的毫秒(0 ~ 999)。</td>
+</tr>
+<tr>
+<td>getMinutes()</td>
+<td>返回 Date 对象的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td>getMonth()</td>
+<td>从 Date 对象返回月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td>getSeconds()</td>
+<td>返回 Date 对象的秒数 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td>getTime()</td>
+<td>返回 1970 年 1 月 1 日至今的毫秒数。</td>
+</tr>
+<tr>
+<td>getTimezoneOffset()</td>
+<td>返回本地时间与格林威治标准时间 (GMT) 的分钟差。</td>
+</tr>
+<tr>
+<td>getUTCDate()</td>
+<td>根据世界时从 Date 对象返回月中的一天 (1 ~ 31)。</td>
+</tr>
+<tr>
+<td>getUTCDay()</td>
+<td>根据世界时从 Date 对象返回周中的一天 (0 ~ 6)。</td>
+</tr>
+<tr>
+<td>getUTCFullYear()</td>
+<td>根据世界时从 Date 对象返回四位数的年份。</td>
+</tr>
+<tr>
+<td>getUTCHours()</td>
+<td>根据世界时返回 Date 对象的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td>getUTCMilliseconds()</td>
+<td>根据世界时返回 Date 对象的毫秒(0 ~ 999)。</td>
+</tr>
+<tr>
+<td>getUTCMinutes()</td>
+<td>根据世界时返回 Date 对象的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td>getUTCMonth()</td>
+<td>根据世界时从 Date 对象返回月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td>getUTCSeconds()</td>
+<td>根据世界时返回 Date 对象的秒钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td>getYear()</td>
+<td>已废弃。 请使用 getFullYear() 方法代替。</td>
+</tr>
+<tr>
+<td>parse()</td>
+<td>返回1970年1月1日午夜到指定日期（字符串）的毫秒数。</td>
+</tr>
+<tr>
+<td>setDate()</td>
+<td>设置 Date 对象中月的某一天 (1 ~ 31)。</td>
+</tr>
+<tr>
+<td>setFullYear()</td>
+<td>设置 Date 对象中的年份（四位数字）。</td>
+</tr>
+<tr>
+<td>setHours()</td>
+<td>设置 Date 对象中的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td>setMilliseconds()</td>
+<td>设置 Date 对象中的毫秒 (0 ~ 999)。</td>
+</tr>
+<tr>
+<td>setMinutes()</td>
+<td>设置 Date 对象中的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td>setMonth()</td>
+<td>设置 Date 对象中月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td>setSeconds()</td>
+<td>设置 Date 对象中的秒钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td>setTime()</td>
+<td>setTime() 方法以毫秒设置 Date 对象。</td>
+</tr>
+<tr>
+<td>setUTCDate()</td>
+<td>根据世界时设置 Date 对象中月份的一天 (1 ~ 31)。</td>
+</tr>
+<tr>
+<td>setUTCFullYear()</td>
+<td>根据世界时设置 Date 对象中的年份（四位数字）。</td>
+</tr>
+<tr>
+<td>setUTCHours()</td>
+<td>根据世界时设置 Date 对象中的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td>setUTCMilliseconds()</td>
+<td>根据世界时设置 Date 对象中的毫秒 (0 ~ 999)。</td>
+</tr>
+<tr>
+<td>setUTCMinutes()</td>
+<td>根据世界时设置 Date 对象中的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td>setUTCMonth()</td>
+<td>根据世界时设置 Date 对象中的月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td>setUTCSeconds()</td>
+<td>setUTCSeconds() 方法用于根据世界时 (UTC) 设置指定时间的秒字段。</td>
+</tr>
+<tr>
+<td>setYear()</td>
+<td>已废弃。请使用 setFullYear() 方法代替。</td>
+</tr>
+<tr>
+<td>toDateString()</td>
+<td>把 Date 对象的日期部分转换为字符串。</td>
+</tr>
+<tr>
+<td>toGMTString()</td>
+<td>已废弃。请使用 toUTCString() 方法代替。</td>
+</tr>
+<tr>
+<td>toISOString()</td>
+<td>使用 ISO 标准返回字符串的日期格式。</td>
+</tr>
+<tr>
+<td>toJSON()</td>
+<td>以 JSON 数据格式返回日期字符串。</td>
+</tr>
+<tr>
+<td>toLocaleDateString()</td>
+<td>根据本地时间格式，把 Date 对象的日期部分转换为字符串。</td>
+</tr>
+<tr>
+<td>toLocaleTimeString()</td>
+<td>根据本地时间格式，把 Date 对象的时间部分转换为字符串。</td>
+</tr>
+<tr>
+<td>toLocaleString()</td>
+<td>据本地时间格式，把 Date 对象转换为字符串。</td>
+</tr>
+<tr>
+<td>toString()</td>
+<td>把 Date 对象转换为字符串。</td>
+</tr>
+<tr>
+<td>toTimeString()</td>
+<td>把 Date 对象的时间部分转换为字符串。</td>
+</tr>
+<tr>
+<td>toUTCString()</td>
+<td>根据世界时，把 Date 对象转换为字符串。</td>
+</tr>
+<tr>
+<td>UTC()</td>
+<td>根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。</td>
+</tr>
+<tr>
+<td>valueOf()</td>
+<td>返回 Date 对象的原始值。</td>
+</tr>
+</tbody>
+</table>
+</div><div class="tags"></div><div class="post-share"><div class="bdsharebuttonbox"><span style="float:left;line-height: 28px;height: 28px;font-size:16px;font-weight:blod">分享到：</span><a href="#" data-cmd="more" class="bds_more"></a><a href="#" data-cmd="mshare" title="分享到一键分享" class="bds_mshare"></a><a href="#" data-cmd="fbook" title="分享到Facebook" class="bds_fbook"></a><a href="#" data-cmd="twi" title="分享到Twitter" class="bds_twi"></a><a href="#" data-cmd="linkedin" title="分享到linkedin" class="bds_linkedin"></a><a href="#" data-cmd="youdao" title="分享到有道云笔记" class="bds_youdao"></a><a href="#" data-cmd="evernotecn" title="分享到印象笔记" class="bds_evernotecn"></a><a href="#" data-cmd="weixin" title="分享到微信" class="bds_weixin"></a><a href="#" data-cmd="qzone" title="分享到QQ空间" class="bds_qzone"></a><a href="#" data-cmd="tsina" title="分享到新浪微博" class="bds_tsina"></a></div></div><div class="post-nav"><a href="/2017/07/04/常用电脑快捷键/" class="next">常用电脑快捷键</a></div><div id="comments"><div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#时间用法表格"><span class="toc-text">时间用法表格</span></a></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/04/New-Date的属性/">New Date的属性</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/04/常用电脑快捷键/">常用电脑快捷键</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/29/working-copy-locked-问题/">working copy locked 问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/23/微信小程序/">微信小程序——400报错</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/20/VUE简单教程/">VUE简单教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/浅析解决跨域问题的几种方法/">浅析解决跨域问题的几种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/06/Git/">Git</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/25/BlueLake博客主题的详细配置/">BlueLake博客主题的详细配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/newBlog/">缓存</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/hello-world/">Hexo 介绍</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a></li></ul></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |  <a href="/atom.xml">订阅</a> |  <a href="/about/">关于</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">秋天的枫叶.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/search.json.js?v=2.0.1"></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","weixin","tsina","qzone","linkedin","fbook","twi","print","renren","sqq","evernotecn","bdysc","tqq","tqf","bdxc","kaixin001","tieba","douban","bdhome","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","h163","copy"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script><script>var cloudTieConfig = {
+  url: document.location.href, 
+  sourceId: "",
+  productKey: '83de9c144d5f4bfdb4800daa776d2f40',
+  target: "cloud-tie-wrapper"
+};</script><script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script></body></html>
