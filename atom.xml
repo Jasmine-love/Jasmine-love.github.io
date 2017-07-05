@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-05T09:30:52.000Z</updated>
+  <updated>2017-07-05T09:55:24.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>代码路上遇到的兼容性问题</title>
+    <link href="http://yoursite.com/2017/07/05/%E4%BB%A3%E7%A0%81%E8%B7%AF%E4%B8%8A%E9%81%87%E5%88%B0%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2017/07/05/代码路上遇到的兼容性问题/</id>
+    <published>2017-07-05T09:32:42.000Z</published>
+    <updated>2017-07-05T09:55:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>兼容问题估计是所有IT人员的一个眼中钉，它总是无声无息的出现，我们不能屏蔽它，只能尽力避免，当然避免的前提是我们对它有所了解。<br>对于兼容问题我知道的也不是很多，只能有一个写一个，总会了解的越来越多，离它越来越远。</p>
+<h3 id="IE浏览器下image边框问题"><a href="#IE浏览器下image边框问题" class="headerlink" title="IE浏览器下image边框问题"></a>IE浏览器下image边框问题</h3><p>调过IE的都应该知道，在IE浏览器下，image会出现边框，当然这个是很好解决的<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">image&#123;border: none;&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="不同浏览器的标签默认的外补丁和内补丁不同"><a href="#不同浏览器的标签默认的外补丁和内补丁不同" class="headerlink" title="不同浏览器的标签默认的外补丁和内补丁不同"></a>不同浏览器的标签默认的外补丁和内补丁不同</h3><p>随便写几个标签，不加样式控制的情况下，各自的margin 和padding差异较大。碰到频率:100%，这个也是很容易解决的<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*&#123;margin:0;padding:0;&#125;</div></pre></td></tr></table></figure></p>
+<p>这个是最常见的也是最易解决的一个浏览器兼容性问题，几乎所有的css文件开头都会用通配符*来设置各个标签的内外补丁是0。</p>
+<h3 id="块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大"><a href="#块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大" class="headerlink" title="块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大"></a>块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大</h3><p>90%（稍微复杂点的页面都会碰到，float布局最常见的浏览器兼容问题）,常见症状是ie6中后面的一块被顶到下一行<br>在float的标签样式控制中加入 display:inline;将其转化为行内属性</p>
+<h3 id="图片默认有间距"><a href="#图片默认有间距" class="headerlink" title="图片默认有间距"></a>图片默认有间距</h3><p>几个img标签放在一起的时候，有些浏览器会有默认的间距，加了问题一中提到的通配符也不起作用。<br>使用float属性为img布局。因为img标签是行内属性标签，所以只要不超出容器宽度，img标签都会排在一行里，但是部分浏览器的img标签之间会有个间距。去掉这个间距使用float是正道。<br>其实不仅仅是图片会出现这种情况，凡是行内块元素都会出现这种情况</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;兼容问题估计是所有IT人员的一个眼中钉，它总是无声无息的出现，我们不能屏蔽它，只能尽力避免，当然避免的前提是我们对它有所了解。&lt;br&gt;对于兼容问题我知道的也不是很多，只能有一个写一个，总会了解的越来越多，离它越来越远。&lt;/p&gt;
+&lt;h3 id=&quot;IE浏览器下image边框问题
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Grunt 自动化</title>
