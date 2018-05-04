@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-22T08:55:08.000Z</updated>
+  <updated>2018-05-04T07:33:44.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git提交项目至github</title>
+    <link href="http://yoursite.com/2018/05/04/git%E6%8F%90%E4%BA%A4%E9%A1%B9%E7%9B%AE%E8%87%B3github/"/>
+    <id>http://yoursite.com/2018/05/04/git提交项目至github/</id>
+    <published>2018-05-04T06:52:18.000Z</published>
+    <updated>2018-05-04T07:33:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、（先进入项目文件夹）通过命令 git init 把这个目录变成git可以管理的仓库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure></p>
+<p>2、把文件添加到版本库中，使用命令 git add .添加到暂存区里面去，不要忘记后面的小数点“.”，意为添加文件夹下的所有文件<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
+<p>3、用命令 git commit告诉Git，把文件提交到仓库。引号内为提交说明<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">'first commit'</span></div></pre></td></tr></table></figure></p>
+<p>4、关联到远程库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote add origin 你的远程库地址</div><div class="line">例如：git remote add origin https://github.com/cade8800/ionic-demo.git</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>远程库地址获取方式<br><img src="/2018/05/04/git提交项目至github/微信图片_20180504150314.png" alt="效果图"></p>
+</blockquote>
+<p>5、获取远程库与本地同步合并（如果远程库不为空必须做这一步，否则后面的提交会失败）<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull --rebase origin master</div></pre></td></tr></table></figure></p>
+<p>6、把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。执行此命令后会要求输入用户名、密码，验证通过后即开始上传。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<p>7、状态查询命令<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure></p>
+<p>备：详细请参考 <a href="http://www.cnblogs.com/tugenhua0707/p/4050072.html" target="_blank" rel="external">http://www.cnblogs.com/tugenhua0707/p/4050072.html</a></p>
+<p><img src="/2018/05/04/git提交项目至github/359884-20171128123923050-1074438610.png" alt="效果图"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1、（先进入项目文件夹）通过命令 git init 把这个目录变成git可以管理的仓库&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>H5项目常见问题汇总及解决方案</title>
@@ -159,7 +189,7 @@
     <link href="http://yoursite.com/2017/12/15/%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2017/12/15/开发过程中遇到的小问题/</id>
     <published>2017-12-15T09:19:02.000Z</published>
-    <updated>2017-12-15T09:28:48.000Z</updated>
+    <updated>2018-05-04T07:42:16.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1移动端输入六位密码-光标位置不对"><a href="#1移动端输入六位密码-光标位置不对" class="headerlink" title="1移动端输入六位密码 光标位置不对"></a>1移动端输入六位密码 光标位置不对</h3><p>解决办法，把它移到看不见的地方<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">input&#123;</div><div class="line">       text-indent: -999em;</div><div class="line">       margin-left: -100%;</div><div class="line">       width: 200%!important;</div><div class="line">  &#125;</div></pre></td></tr></table></figure></p>
 <h3 id="2-textarea-文本域"><a href="#2-textarea-文本域" class="headerlink" title="2 textarea 文本域"></a>2 textarea 文本域</h3><pre><code><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">resize: none; //禁止放大</div><div class="line">overflow-y: hidden;  //进度条</div></pre></td></tr></table></figure>
@@ -168,6 +198,11 @@
 <h3 id="5-重定向"><a href="#5-重定向" class="headerlink" title="5 重定向"></a>5 重定向</h3><p>重定向是网页制作中的一个知识，几个例子跟你说明，假设你现在所处的位置是一个论坛的登录页面，你填写了帐号，密码，点击登陆，如果你的帐号密码正确，就自动跳转到论坛的首页，不正确就返回登录页；这里的自动跳转，就是重定向的意思。或者可以说，重定向就是，在网页上设置一个约束条件，条件满足，就自动转入到其它网页、网址。<br>    window.location.href = ‘goods_management.html?tab=audit’;</p>
 <h3 id="6-input文本框输入数字时，小数点后面只保留2位"><a href="#6-input文本框输入数字时，小数点后面只保留2位" class="headerlink" title="6 input文本框输入数字时，小数点后面只保留2位"></a>6 input文本框输入数字时，小数点后面只保留2位</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'#goodsPrice'</span>).blur(<span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">    var money = $(this).val() - 0.0;</div><div class="line">    $(this).val(money.toFixed(2));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="7-刷新当前页面"><a href="#7-刷新当前页面" class="headerlink" title="7 刷新当前页面"></a>7 刷新当前页面</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">window.location.reload()：    //刷新当前页面</div><div class="line">&lt;meta http-equiv=<span class="string">"refresh"</span> content=<span class="string">"3600"</span>&gt;   //1小时刷新一次</div></pre></td></tr></table></figure>
+<h3 id="8-手机端首屏遇到的fixed问题（用手机浏览器浏览，我用的是QQ浏览器）"><a href="#8-手机端首屏遇到的fixed问题（用手机浏览器浏览，我用的是QQ浏览器）" class="headerlink" title="8 手机端首屏遇到的fixed问题（用手机浏览器浏览，我用的是QQ浏览器）"></a>8 手机端首屏遇到的fixed问题（用手机浏览器浏览，我用的是QQ浏览器）</h3><p>最近做项目时遇到一个小问题，手机端首屏banner图fixed固定，当页面向上滑动时，banner图高度变了，由于banner图是用背景图做的，所以给人的感觉是banner图跳了一下，然后banner图显示全了，而原先是显示不全的。</p>
+<p>滑动前(左图)后(右图)：</p>
+<center class="half"><img src="/2017/12/15/开发过程中遇到的小问题/微信图片_20180504153043.jpg" width="48%" style="display:inline-block;margin-right:4%;"><img src="/2017/12/15/开发过程中遇到的小问题/微信图片_20180504153117.jpg" width="48%" style="display:inline-block;"></center>
+
+<p>经过检查，发现是由于没有给固定高度，而是用100%的原因。</p>
 ]]></content>
     
     <summary type="html">
