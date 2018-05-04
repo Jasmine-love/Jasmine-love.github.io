@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-04T07:33:44.000Z</updated>
+  <updated>2018-05-04T08:07:00.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,24 +16,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何展示github中的demo</title>
+    <link href="http://yoursite.com/2018/05/04/%E5%A6%82%E4%BD%95%E5%B1%95%E7%A4%BAgithub%E4%B8%AD%E7%9A%84demo/"/>
+    <id>http://yoursite.com/2018/05/04/如何展示github中的demo/</id>
+    <published>2018-05-04T07:46:50.000Z</published>
+    <updated>2018-05-04T08:07:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了方便，我把项目代码托管到github上了，但是在这里相信大家都会遇到，打开一个HTML页面，呈现在大家面前的是代码形式的，而不是网页中看到的。<br><img src="/2018/05/04/如何展示github中的demo/微信图片_20180504154848.png" alt="呈现形式"><br>可是自己想在网上看到自己仓库中的demo(也就是网页的效果)。<br>我们可以通过以下办法来实现。</p>
+<h3 id="1、找到项目所在仓库，点击进入"><a href="#1、找到项目所在仓库，点击进入" class="headerlink" title="1、找到项目所在仓库，点击进入"></a>1、找到项目所在仓库，点击进入</h3><p><img src="/2018/05/04/如何展示github中的demo/QQ截图20180504155641.png" alt="进入仓库"></p>
+<h3 id="2、点击settings，并进入"><a href="#2、点击settings，并进入" class="headerlink" title="2、点击settings，并进入"></a>2、点击settings，并进入</h3><p><img src="/2018/05/04/如何展示github中的demo/QQ截图20180504155401.png" alt="进入仓库"></p>
+<h3 id="3、找到githubPages点击none-切换到master-branch，save保存"><a href="#3、找到githubPages点击none-切换到master-branch，save保存" class="headerlink" title="3、找到githubPages点击none,切换到master branch，save保存"></a>3、找到githubPages点击none,切换到master branch，save保存</h3><p>切换到master branch<br><img src="/2018/05/04/如何展示github中的demo/QQ截图20180504160215.png" alt="寻找githubPages"><br>点击保存<br><img src="/2018/05/04/如何展示github中的demo/QQ截图20180504160426.png" alt="寻找githubPages"></p>
+<h3 id="4、点击链接"><a href="#4、点击链接" class="headerlink" title="4、点击链接"></a>4、点击链接</h3><p>保存，之后，在githubPages这里会出现一个链接，点击链接。<br><img src="/2018/05/04/如何展示github中的demo/QQ截图20180504160547.png" alt="寻找githubPages"><br>你会进入一个网页，网页显示的正是现在的这个项目，想看哪一页，直接在后面添加相应目录即可，如：打开about.html，直接在链接后面添加about.html即可，eg: <a href="http://qqself.space/myself/about.html" target="_blank" rel="external">http://qqself.space/myself/about.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为了方便，我把项目代码托管到github上了，但是在这里相信大家都会遇到，打开一个HTML页面，呈现在大家面前的是代码形式的，而不是网页中看到的。&lt;br&gt;&lt;img src=&quot;/2018/05/04/如何展示github中的demo/微信图片_20180504154848.p
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>git提交项目至github</title>
-    <link href="http://yoursite.com/2018/05/04/git%E6%8F%90%E4%BA%A4%E9%A1%B9%E7%9B%AE%E8%87%B3github/"/>
-    <id>http://yoursite.com/2018/05/04/git提交项目至github/</id>
-    <published>2018-05-04T06:52:18.000Z</published>
-    <updated>2018-05-04T07:33:44.000Z</updated>
+    <link href="http://yoursite.com/2018/05/03/git%E6%8F%90%E4%BA%A4%E9%A1%B9%E7%9B%AE%E8%87%B3github/"/>
+    <id>http://yoursite.com/2018/05/03/git提交项目至github/</id>
+    <published>2018-05-03T06:52:18.000Z</published>
+    <updated>2018-05-04T07:45:58.000Z</updated>
     
     <content type="html"><![CDATA[<p>1、（先进入项目文件夹）通过命令 git init 把这个目录变成git可以管理的仓库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure></p>
 <p>2、把文件添加到版本库中，使用命令 git add .添加到暂存区里面去，不要忘记后面的小数点“.”，意为添加文件夹下的所有文件<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
 <p>3、用命令 git commit告诉Git，把文件提交到仓库。引号内为提交说明<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">'first commit'</span></div></pre></td></tr></table></figure></p>
 <p>4、关联到远程库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote add origin 你的远程库地址</div><div class="line">例如：git remote add origin https://github.com/cade8800/ionic-demo.git</div></pre></td></tr></table></figure></p>
 <blockquote>
-<p>远程库地址获取方式<br><img src="/2018/05/04/git提交项目至github/微信图片_20180504150314.png" alt="效果图"></p>
+<p>远程库地址获取方式<br><img src="/2018/05/03/git提交项目至github/微信图片_20180504150314.png" alt="效果图"></p>
 </blockquote>
 <p>5、获取远程库与本地同步合并（如果远程库不为空必须做这一步，否则后面的提交会失败）<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull --rebase origin master</div></pre></td></tr></table></figure></p>
 <p>6、把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。执行此命令后会要求输入用户名、密码，验证通过后即开始上传。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
 <p>7、状态查询命令<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure></p>
 <p>备：详细请参考 <a href="http://www.cnblogs.com/tugenhua0707/p/4050072.html" target="_blank" rel="external">http://www.cnblogs.com/tugenhua0707/p/4050072.html</a></p>
-<p><img src="/2018/05/04/git提交项目至github/359884-20171128123923050-1074438610.png" alt="效果图"></p>
+<p><img src="/2018/05/03/git提交项目至github/359884-20171128123923050-1074438610.png" alt="效果图"></p>
 ]]></content>
     
     <summary type="html">
@@ -961,33 +984,6 @@ npm install -g babel</code></p>
     
       &lt;p&gt;前端用到的的缓存一般有三种Cookie, LocalStorage 与 SessionStorage&lt;/p&gt;
 &lt;h2 id=&quot;Cookie&quot;&gt;&lt;a href=&quot;#Cookie&quot; class=&quot;headerlink&quot; title=&quot;Cookie&quot;&gt;&lt;/a&gt;Cookie&lt;/h2
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 介绍</title>
-    <link href="http://yoursite.com/2017/05/24/hello-world/"/>
-    <id>http://yoursite.com/2017/05/24/hello-world/</id>
-    <published>2017-05-24T09:04:57.390Z</published>
-    <updated>2017-05-24T09:27:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
     
     </summary>
     
