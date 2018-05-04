@@ -138,16 +138,16 @@
     <link href="http://yoursite.com/2017/12/20/%E5%86%99%E5%89%8D%E7%AB%AF%E9%A1%B5%E9%9D%A2%E6%97%B6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
     <id>http://yoursite.com/2017/12/20/写前端页面时的注意事项/</id>
     <published>2017-12-20T09:32:21.000Z</published>
-    <updated>2017-12-22T08:30:58.000Z</updated>
+    <updated>2018-05-04T06:42:20.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="注意兼容性要求"><a href="#注意兼容性要求" class="headerlink" title="注意兼容性要求"></a>注意兼容性要求</h3><pre><code>无论你是甲方还是乙方，希望你在开始切页面之前，问清楚，这个网站是否要兼容性要求，要不你做的事兼容到了IE10，结果需求是要求到IE8，你是改不改。当然，如果你牛，你可以不改。
-</code></pre><h3 id="确认是自适应还是PC端"><a href="#确认是自适应还是PC端" class="headerlink" title="确认是自适应还是PC端"></a>确认是自适应还是PC端</h3><pre><code>随着科技产品的流行，人们在做网站是的要求也越来越高，不再只要求单一的手机端页面或是PC端页面，有可能是两者兼容，所以在开始之前，我们需要去确认清楚。反正我只不喜欢修改。
-</code></pre><h3 id="代码简洁明了"><a href="#代码简洁明了" class="headerlink" title="代码简洁明了"></a>代码简洁明了</h3><pre><code>简洁的代码，不仅对于自己来说容易检查复用,对于后台开发人员来说嵌套页面也很方便。
-</code></pre>]]></content>
+    <content type="html"><![CDATA[<h3 id="注意兼容性要求"><a href="#注意兼容性要求" class="headerlink" title="注意兼容性要求"></a>注意兼容性要求</h3><p>无论你是甲方还是乙方，希望你在开始切页面之前，问清楚，这个网站是否要兼容性要求，要不你做的事兼容到了IE10，结果需求是要求到IE8，你是改不改。当然，如果你牛，你可以不改。</p>
+<h3 id="确认是自适应还是PC端"><a href="#确认是自适应还是PC端" class="headerlink" title="确认是自适应还是PC端"></a>确认是自适应还是PC端</h3><p>随着科技产品的流行，人们在做网站是的要求也越来越高，不再只要求单一的手机端页面或是PC端页面，有可能是两者兼容，所以在开始之前，我们需要去确认清楚。反正我只不喜欢修改。</p>
+<h3 id="代码简洁明了"><a href="#代码简洁明了" class="headerlink" title="代码简洁明了"></a>代码简洁明了</h3><p>简洁的代码，不仅对于自己来说容易检查复用,对于后台开发人员来说嵌套页面也很方便。</p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;注意兼容性要求&quot;&gt;&lt;a href=&quot;#注意兼容性要求&quot; class=&quot;headerlink&quot; title=&quot;注意兼容性要求&quot;&gt;&lt;/a&gt;注意兼容性要求&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;无论你是甲方还是乙方，希望你在开始切页面之前，问清楚，这个网站是否要兼容性要求，要不
+      &lt;h3 id=&quot;注意兼容性要求&quot;&gt;&lt;a href=&quot;#注意兼容性要求&quot; class=&quot;headerlink&quot; title=&quot;注意兼容性要求&quot;&gt;&lt;/a&gt;注意兼容性要求&lt;/h3&gt;&lt;p&gt;无论你是甲方还是乙方，希望你在开始切页面之前，问清楚，这个网站是否要兼容性要求，要不你做的事兼容到了
     
     </summary>
     
